@@ -1,0 +1,53 @@
+<html>
+    <title>Keylogger</title>
+    <head><head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .button {
+          background-color: #04AA6D; /* Green */
+          border: none;
+          color: white;
+          padding: 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 50px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        .button5 {border-radius: 50%;}
+         
+        .container { 
+        height: 200px;
+        position: relative;
+        border: 3px solid green; 
+        }
+
+        .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        }   
+        </style></head>
+    <body>
+        <div class="container">
+            <div class="center">
+                <button class="button button5">Start</button>
+            </div>
+        </div>
+    </br>
+        <div class="container">
+            <iframe id="textfile" src="op.txt" width="1510" height="195"></iframe>
+            <!--<button onclick="print()">Print</button>-->
+            <script type="text/javascript">
+            function print() {
+                var iframe = document.getElementById('textfile');
+                iframe.contentWindow.print();
+            }
+</script>
+        </div>    
+         </body>
+</html>
